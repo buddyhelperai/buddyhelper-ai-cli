@@ -1,0 +1,17 @@
+{
+    "writer": {
+        "howto": "Below are the instructions on how to write the text: ",
+        "data": "Here is the information on which to write the text:",
+        "path": "writer"
+    },
+    "analyst": {
+        "howto": "Evaluate this data",
+        "data": "The data to analyze",
+        "path": "analyst"
+    },
+    "email": {
+        "howto": "Below are the instructions on how to write the email: a soft tone a voice and a unformal style",
+        "data": "",
+        "path": "email"
+    }
+}
