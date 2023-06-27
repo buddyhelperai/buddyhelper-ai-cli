@@ -1,7 +1,7 @@
 import os
 import json
 
-with open("config.json") as file:
+with open("../config.json") as file:
     config_data = json.load(file)
 
 os.environ["OPENAI_API_KEY"] = config_data["api_keys"]["open_ai"]
