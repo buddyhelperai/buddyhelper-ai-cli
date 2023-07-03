@@ -4,6 +4,8 @@ import sys
 import subprocess
 import readline
 
+import openai #main chat
+
 def load_config(filename):
     with open(filename, 'r') as f:
         return json.load(f)
@@ -120,7 +122,39 @@ def main():
                 print(result.stdout)
 
         else:
-            #TODO chat
+            with open("config.json") as file:
+                config_data = json.load(file)
+
+            openai.api_key = config_data["api_keys"]["open_ai"]
+  
+            conversation = [
+                {"role": "system", "content": "You are a helpful assistant."},
+            ]
+
+            while True:
+                user_input = input("User: ")
+                if user_input == "chat reset":
+                    conversation = [
+                        {"role": "system", "content": "You are a helpful assistant."},
+                    ]
+                    continue
+
+                conversation.append({"role": "user", "content": user_input})
+
+                response = openai.ChatCompletion.create(
+                  model="gpt-3.5-turbo",
+                  messages=conversation
+                )
+
+                if 'content' in response['choices'][0]['message']:
+                    assistant_response = response['choices'][0]['message']['content']
+                else:
+                    assistant_response = "Error: try again"
+
+                print("Assistant: ", assistant_response)
+
+                conversation.append({"role": "assistant", "content": assistant_response})
+                
             print("Command not found.")
 
 if __name__ == "__main__":
