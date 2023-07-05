@@ -121,7 +121,8 @@ def main():
                 result = subprocess.run(f"cd {helper_name} && python3 main.py", shell=True, capture_output=True, text=True)
                 print(result.stdout)
 
-        else:
+        elif cmd_parts[0] == "assistant":
+
             with open("config.json") as file:
                 config_data = json.load(file)
 
@@ -154,7 +155,8 @@ def main():
                 print("Assistant: ", assistant_response)
 
                 conversation.append({"role": "assistant", "content": assistant_response})
-                
+
+        else:
             print("Command not found.")
 
 if __name__ == "__main__":
