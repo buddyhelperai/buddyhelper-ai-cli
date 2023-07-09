@@ -12,6 +12,7 @@ pip install openai
 
 ## Understand the "chat with" document method
 https://github.com/buddyhelperai/chat-with-documents
+<br>
 https://medium.com/@buddyhelperai/chat-with-documents-7aeecbe1d06c
 
 ## Understand the "helper" method
