@@ -1,5 +1,7 @@
 # Buddyhelper AI cli
-How and why <b>Buddy Helper AI</b> is born https://medium.com/@buddyhelperai/buddyhelperai-410fa1a4774c
+- How and why <b>Buddy Helper AI</b> is born https://medium.com/@buddyhelperai/buddyhelperai-410fa1a4774c
+- What is Helper (in Buddy Helper AI) https://medium.com/@buddyhelperai/what-is-helper-in-buddy-helper-ai-f3b28862aba4
+- How to design a Helper https://medium.com/@buddyhelperai/how-to-designa-helper-for-a-task-a-video-example-buddy-helper-ai-9cc4b3b8aee6
 
 ## Why a cli?
 Buddy Helper AI is the project, the cli (Command Line Interface) is just a simple way to start.
