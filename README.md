@@ -38,3 +38,7 @@ use helper [new-helper-name] => to start a chat to use the helper
 ```
 #### assistant
 chat with gpt-3.5-model. Use "chat-reset" to reset the chat history and start a new chat.
+
+# py-open-url.py
+A tool to easily grab content from a webpage. Assure that you are allowed to grab that content.
+You give the URL of the webpage and a Simple Web Browser will show the content of the page; you select the text you need and press control+c on your keyboard. If you confirm this operation, a plain text file will be created in /data folder. So this tool is perfect in conjunction with a Helper. Keep to easily give information and data to your helper.
